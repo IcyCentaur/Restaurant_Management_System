@@ -1,0 +1,21 @@
+create table restaurant (name varchar(20) primary KEY, location varchar(30), capacity integer);
+create table _order (order_id integer primary KEY, item varchar(20), price integer);
+create table inventory (item_id integer primary KEY, name varchar(20), quantity integer, stocked_on date);
+create table staff (staff_id integer primary KEY, name varchar(20), designation varchar(20), salary integer);
+
+insert into restaurant values("Dominoes", "Guduvancehri", 40); 
+insert into restaurant values("McDonalds", "Potheri", 50); 
+insert into restaurant values("BBq Nation", "Vellachery", 25); 
+
+insert into _order values(101, "Margherita Pizza", 525);
+insert into _order values(102, "Pepperoni Pizza", 725); 
+insert into _order values(103, "Garlic Bread", 105);
+
+insert into inventory values(1001, "Cheese", 100, "2023-04-12"); 
+insert into inventory values(1002, "Oil", 10, "2023-04-20"); 
+insert into inventory values(1003, "Tomatoes", 200, "2023-04-23"); 
+insert into inventory values(1004, "All-Purpose Flour", 1000, "2023-04-11"); 
+
+insert into staff values(1, "Ramesh", "Manager", 45000); 
+insert into staff values(2, "Sam", "Janitor", 20000); 
+insert into staff values(3, "Sukesh", "Cook", 35000); 
